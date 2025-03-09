@@ -1,0 +1,280 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* INICIO HEADER */
+
+.nave{
+    background-color: #1b77da;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 9;
+}
+
+.nave a{
+    padding: 20px;
+    text-decoration: none;
+    color: #ddd;
+}
+
+.nave a:hover{
+    color: #fff;
+}
+
+
+
+.nave-list{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin-right: 24px;
+}
+
+.nave-list a{
+    text-decoration: none;
+    color: #ddd;
+    padding: 20px;
+}
+
+.nave-list a:hover{
+    color: #fff;
+}
+
+/* FIM HEADER */
+
+/* INICIO MAIN */
+
+.main{
+    width: 100%;
+    background-color: #000;
+    height: calc(100vh - 80px);
+    background-image: url("assets/saude-2.webp");
+    display: flex;
+    align-items: center;
+    padding-left: 10%;
+   
+}
+
+.main h1{
+    color: #000;
+    font-size: 65px;
+    font-weight: bold;
+    
+}
+
+.main p{
+    font-size: 35px;
+    font-style: italic;
+    color: #000;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 35px;
+
+}
+.call-to-action{
+    cursor: pointer;
+    background-color: #ffff;
+    border: 0;
+    padding: 20px;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: bold;
+    transition:  0.9s;
+}
+
+.main a{
+    text-decoration: none;
+    color: #181818;
+}
+
+.call-to-action:hover{
+    transform: scale(1.1);
+}
+
+/* FIM MAIN */
+
+
+/* INICIO SOBRE */
+.about{
+    background-color: #ffffff;
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about div{
+    max-width: 50%;
+    padding-right: 40px;
+}
+
+.about div h1{
+    padding-bottom: 20px;
+}
+
+.about img{
+    max-width: 450px;
+    border-radius: 8px;
+}
+
+/* FIM ABOUT */
+
+/* INICIO PROJECTS */
+
+.projects{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 0;
+}
+
+.projects h2{
+    font-size: 32px;
+    margin-bottom: 8px;
+    margin-top: 20px;
+}
+
+.projects p{
+    margin-bottom: 40px;
+    font-style: italic;
+}
+
+.project-list{
+    width: 100%;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects img{
+    width: 22%;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+    opacity: 0.8;
+    transition: 0.9s;
+}
+
+.projects img:hover{
+    opacity: 1;
+    
+}
+
+.action{
+    background-color: #181818;
+    border: 0;
+    padding: 12px 24px;
+    border-radius: 4px;
+    font-size: 18px;
+    color: #ffff;
+    margin-top: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* FIM PROJECTS */
+
+/* INICIO FOOTER */
+
+footer{
+    width: 100%;
+    background-color: #1b77da;
+    padding: 70px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+footer a{
+    text-decoration: none;
+    color: #ffff;
+    padding: 60px 0;
+}
+
+footer p{
+    margin-left: 12px;
+}
+
+/* FIM FOOTER */
+
+/* Responsividade */
+
+@media (max-width: 1100px){
+    /* INICIO MAIN */
+    .main h1{
+        font-size: 45px;
+    }
+
+    .main p{
+        font-size: 18px;
+    }
+
+    .main{
+        background-size: cover;
+    }
+    /* FIM MAIN */
+
+    /* INICIO SOBRE */
+
+    .about{
+        flex-direction: column;
+        padding-top: 80px;
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 0;
+    }
+
+    .about div{
+        max-width: 80%;
+    }
+
+    .about div h2{
+        font-size: 45px;
+    }
+
+    .about img{
+        width: 80%;
+        margin-top: 30px;
+    }
+
+    .projects img{
+        width: 27.5%;
+    }
+
+    footer{
+        flex-direction: column;
+    }
+
+
+    footer h3{
+        font-size: 24px;
+        margin-bottom: 8px;
+    }
+
+    footer p{
+        margin: 0;
+    }
+}
